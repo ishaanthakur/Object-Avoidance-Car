@@ -1,1 +1,5 @@
 # Object-Avoidance-Car
+
+The goal of our design was to build an autonomous car that would be able to maneuver across an obstacle/wall without hitting it and retrace its path to its original direction of motion. We sought to do this by mounting 2 Ultrasonic sensors (HC SR04) onto a plastic car chassis, specifically called a shadow chassis, containing two DC motors, which would control using the Arduino’s PWM pins.
+
+First, we would assemble the motorized car know as RedBot with the Shadow Chassis and two DC motors. After the car was assembled we started to design the Arduino PWM pin controlled BJT circuit for each of the two wheels. Pulse-Width Modulation (PWM) makes the peak voltage high enough to overcome the stall point on the IV curve. This essentially prevents the speed control from being too strongly related to the stall current of the motor. Therefore, using this method no current will be drawn from the battery when the voltage falls to zero and less energy is wasted. We would then add two Ultrasonic Sensors to the design, using their measurements to affect the magnitude of the force exerted by the motors, and thus accurately avoid the obstacle.
